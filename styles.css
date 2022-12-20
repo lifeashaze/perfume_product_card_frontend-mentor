@@ -1,0 +1,158 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat,Arial;
+}
+
+.product{
+    display: flex;
+    height: 480px;
+    width: 610px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0;
+    top: 50%;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.product-image img {
+    height: 480px;
+    border-radius: 10px;
+    
+}
+
+.product-details{
+    margin: 30px;
+}
+
+.product-details h1{
+    font-family: Fraunces,Arial;
+    width: 230px;
+    font-size: 31px;
+    line-height: 30px;
+}
+
+
+.top{
+    letter-spacing: 6px;
+    font-size: 12px;
+    color: gray;
+}
+.desc {
+    font-size: 14px;
+    width: 240px;
+    color: gray;
+    line-height: 22px;
+}
+
+.new-price{
+    font-family: Fraunces,Arial;
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+}
+
+.old-price{
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+    position: absolute;
+    right: 47px;
+    top: 20px;
+
+}
+
+.price{
+    display: flex;
+    position: relative;
+}
+
+.cart {
+    height: 18px;
+    position: absolute;
+    top: 13px;
+    left: 55px;
+}
+
+button {
+    font-family: Montserrat;
+    background-color:hsl(158, 36%, 37%); 
+    color: white;
+    width: 230px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    transition: 0.2s;
+}
+
+button:hover{
+    opacity: 0.6;
+}
+
+.button-content{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+button p{
+    font-size: 14px;
+    margin-left: 25px;
+}
+
+
+@media (max-width: 610px){
+    .product-image img{
+        height: 300px;
+    }
+
+    .product-image img {
+        height: 350px;
+        width: 350px;
+        object-fit: cover;
+    }
+    .product-details h1{
+        width: 250px;
+        margin: 15px 0px;
+    }
+
+    .product-details{
+        margin-top: 10px;
+    }
+
+    .desc {
+        width: 300px;
+        margin: 0;
+    }
+
+    .price{
+        height: 70px;
+        margin-bottom: 10px;
+    }
+
+    
+    .old-price{
+        right: 105px;
+        top: 25px;
+    }
+
+    .cart{
+        left: 80px;
+    }
+
+    button{
+        border: 1px solid black;
+        width: 285px;
+    }
+
+    .product{
+        display: flex;
+        flex-direction: column;
+        height: 770px;
+        width: 350px;
+    }
+}
